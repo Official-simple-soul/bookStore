@@ -60,7 +60,7 @@ const [defaults, setDefaults] = useState([])
                             <li>Snippet: {}</li>
                             <li className='flex justify-between items-center relative font-bold'><span>Price: {item.saleInfo.saleability}</span></li>
                         </ul>
-                        <div className="buy text-center absolute bottom-2 left-28 md:left-20">
+                        <div className="buy text-center absolute bottom-2 left-0 right-0">
                             <span className='border-2 px-5 rounded-lg z-20'>Read</span>
                         </div>
                     </div>
