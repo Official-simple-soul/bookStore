@@ -33,7 +33,7 @@ const [defaults, setDefaults] = useState([])
                                     <li><span className='font-bold'>Snippet:</span> {}</li>
                                     <li><span className='font-bold'>Price:</span> {item.saleInfo.saleability}</li>
                                 </ul>
-                                <div className="buy text-center absolute bottom-2 left-28 md:left-20">
+                                <div className="buy text-center absolute bottom-2 left-0 right-0 md:left-20">
                                     <span className='border-2 px-5 rounded-lg z-20'>Read</span>
                                 </div>
                             </div>
@@ -42,7 +42,7 @@ const [defaults, setDefaults] = useState([])
             </div>
           )
     }
-    
+
   return (
     <div className='container grid grid-cols-1 md:grid-cols-4 gap-4 px-12 md:px-0'>
         {defaults.map((item, idx)=> {
