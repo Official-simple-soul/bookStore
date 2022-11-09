@@ -6,21 +6,24 @@ import Contact from './Components/Contact'
 import Authors from './Components/Authors'
 import Main from "./Components/Main";
 import Layout from "./Components/Layout";
-import Cards from './Components/Cards';
+import Read from './Components/Read';
+import Footer from './Components/Footer';
+import Menu from './Components/Menu';
 
 function App() {
   return (
     <>
       <BrowserRouter>
+        <Layout />
+        <Menu />
         <Routes>
-          <Route path="/" element={<Layout />}>
-            <Route path="shop" element={<Shop />} />
-            <Route path="author" element={<Authors />} />
-            <Route path="contact" element={<Contact />} />
-          </Route>
-          <Route path='/' element={<Main />} />
+            <Route exact path='/' element={<Main />}/>
+            <Route  path='/shop' element={<Shop />}/>
+            <Route  path='/contact' element={<Contact />}/>
+            <Route  path='/author' element={<Authors />}/>
+            <Route exact path='/read' element={<Read />}/>
         </Routes>
-        <Main />
+        <Footer />
       </BrowserRouter>
     </>
   );

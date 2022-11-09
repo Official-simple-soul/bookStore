@@ -14,7 +14,7 @@ const Form = () => {
       .catch(err=>console.log(err))
     }
   }
-
+console.log(bookData)
 
    const clickSearch = (e) => {
       e.preventDefault()
@@ -22,7 +22,6 @@ const Form = () => {
         .then(res=>setBookData(res.data.items))
         .catch(err=>console.log(err))
     }
-  
     
   return (
     <div>

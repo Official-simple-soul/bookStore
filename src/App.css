@@ -23,3 +23,17 @@
 .search-input:focus {
   outline: 0;
 }
+
+footer {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.558), rgba(228, 91, 32, 0.403)),url(../src/images/footer-image-2.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.nav ul {
+  transition: all 3s ease;
+}
+.nav {
+  transition: all 3s ease;
+}
