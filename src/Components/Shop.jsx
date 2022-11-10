@@ -24,9 +24,9 @@ const Shop = () => {
       <h1 className='text-center text-3xl font-bold mb-8 text-secColor'>Get your favourite book from the store</h1>
         <div className="grid grid-cols-1 md:grid-cols-4 gap-4 px-3 md:px-0">
             {
-              dat.map(item=> {
+              dat.map((item, idx)=> {
                 const {img, title, author, price} = item;
-                return <div className="card mb-8 text-secColor border shadow">
+                return <div className="card mb-8 text-secColor border shadow" key={idx+1}>
                           <div className="card-image">
                             <img src={img} alt="" />
                           </div>

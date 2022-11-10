@@ -9,7 +9,7 @@ const Form = () => {
 
   const searchBook = (event) => {
     if(event.key ==='Enter') {
-      axios.get('https://www.googleapis.com/books/v1/volumes?q='+search+'&key=AIzaSyAFhC8CVcFg4EIkc8iUWHp2XOTniAsPLMM')
+      axios.get('https://www.googleapis.com/books/v1/volumes?q='+search+'&orderBy=newest&key=AIzaSyClBZcn6cgWyV2NZNwEqWfAGyHv6je1EUc')
       .then(res=>setBookData(res))
       .catch(err=>console.log(err))
     }
@@ -18,7 +18,7 @@ console.log(bookData)
 
    const clickSearch = (e) => {
       e.preventDefault()
-      axios.get('https://www.googleapis.com/books/v1/volumes?q='+search+'&key=AIzaSyAFhC8CVcFg4EIkc8iUWHp2XOTniAsPLMM')
+      axios.get('https://www.googleapis.com/books/v1/volumes?q='+search+'&orderBy=newest&key=AIzaSyClBZcn6cgWyV2NZNwEqWfAGyHv6je1EUc')
         .then(res=>setBookData(res.data.items))
         .catch(err=>console.log(err))
     }

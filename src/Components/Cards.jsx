@@ -8,7 +8,7 @@ const Cards = ({book}) => {
 const [defaults, setDefaults] = useState([])
 
     const defaultValue = () => {
-        axios.get('https://www.googleapis.com/books/v1/volumes?q=react&orderBy=newest&key=AIzaSyAFhC8CVcFg4EIkc8iUWHp2XOTniAsPLMM')
+        axios.get('https://www.googleapis.com/books/v1/volumes?q=react&orderBy=newest&key=AIzaSyClBZcn6cgWyV2NZNwEqWfAGyHv6je1EUc')
         .then(res=>setDefaults(res.data.items))
         .catch(err=>console.log(err))
     }
