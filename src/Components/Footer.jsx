@@ -22,7 +22,7 @@ const Footer = () => {
             </div>
             <hr className='border-2 my-3'></hr>
             <div className="last text-center mt-6 grid md:grid-cols-2">
-                <h1 className='text-2xl md:text-3xl font-bold'>SUBSCRIPTE TO OUR BOOK UPDATE</h1>
+                <h1 className='text-2xl md:text-3xl font-bold'>SUBSCRIBE TO OUR BOOK UPDATE</h1>
                 <form action="" className='mt-3 flex justify-center items-center flex-col'>
                     <input type="email" 
                             className='px-3 w-80 md:w-96 py-2 bg-transparent border md:border-4 border-white rounded'
